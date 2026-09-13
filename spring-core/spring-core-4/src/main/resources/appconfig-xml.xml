@@ -7,6 +7,6 @@
         <bean id="dev" class="com.telusko.service.DevOps" primary="true" />
         <bean class="com.telusko.service.SystemDesign"/>
 
-    <bean class="com.telusko.main.Telusko" autowire="byType">
+    <bean class="com.telusko.main.Telusko" autowire="">
     </bean>
 </beans>
