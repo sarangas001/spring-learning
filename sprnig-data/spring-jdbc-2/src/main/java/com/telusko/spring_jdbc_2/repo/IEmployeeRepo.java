@@ -1,6 +1,6 @@
-package repo;
+package com.telusko.spring_jdbc_2.repo;
 
-import Entity.Employee;
+import com.telusko.spring_jdbc_2.Entity.Employee;
 
 import java.util.List;
 

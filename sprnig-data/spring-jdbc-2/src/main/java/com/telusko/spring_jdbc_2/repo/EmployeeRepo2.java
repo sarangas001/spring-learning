@@ -1,6 +1,6 @@
-package repo;
+package com.telusko.spring_jdbc_2.repo;
 
-import Entity.Employee;
+import com.telusko.spring_jdbc_2.Entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -27,8 +27,6 @@ public class EmployeeRepo2 implements IEmployeeRepo{
 
     @Override
     public List<Employee> getEmployeeInfo() {
-
-
 
         return null;
     }

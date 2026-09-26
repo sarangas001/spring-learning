@@ -1,4 +1,4 @@
-package Entity;
+package com.telusko.spring_jdbc_2.Entity;
 
 public class Employee {
     private Integer id;
