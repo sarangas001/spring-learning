@@ -13,4 +13,6 @@ public interface IProductService
     Product getProductById(Integer id);
     Boolean isProductAvailable(Integer id);
     Long getTotalProductsCount();
+    String deleteProductById(Integer id);
+    String deleteProdcutsByIds(Iterable<Integer> ids);
 }

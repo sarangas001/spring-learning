@@ -59,5 +59,38 @@ public class ProductService implements IProductService {
         return repo.count();
     }
 
+    @Override
+    public String deleteProductById(Integer id) {
+        Optional<Product> optional = repo.findById(id);
+        if (optional.isPresent()) {
+            repo.deleteById(id);
+            return "Product id with " + id + " Successfully deleted";
+        }else {
+            return "Product not deleted";
+        }
+
+    }
+
+    @Override
+    public String deleteProdcutsByIds(Iterable<Integer> ids) {
+        List<Product> products = (List<Product>) repo.findAllById(ids);
+        //option 1
+        if(products.size() != 0) {
+            repo.deleteAllById(ids);
+            return "Products are deleted";
+        }else {
+            return "Products are not in the record";
+        }
+
+        // option 2
+//        if (products.size() == products.size()) {
+//            repo.deleteAllById(ids);
+//            return "Products are deleted";
+//        }else {
+//            return "Products are not in the record";
+//        }
+
+    }
+
 
 }
