@@ -1,0 +1,12 @@
+2026-10-24T09:57:18.688+05:30  INFO 49564 --- [log4j] [restartedMain] com.telusko.Log4jApplication             : Starting Log4jApplication using Java 24.0.1 with PID 49564 (E:\Industry Ready Java Spring Boot\Spring-boot\spring-rest\log4j\target\classes started by User in E:\Industry Ready Java Spring Boot\Spring-boot\spring-rest\log4j)
+2026-10-24T09:57:18.691+05:30  INFO 49564 --- [log4j] [restartedMain] com.telusko.Log4jApplication             : No active profile set, falling back to 1 default profile: "default"
+2026-10-24T09:57:18.730+05:30  INFO 49564 --- [log4j] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-24T09:57:18.730+05:30  INFO 49564 --- [log4j] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-24T09:57:19.511+05:30  INFO 49564 --- [log4j] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-24T09:57:19.528+05:30  INFO 49564 --- [log4j] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-24T09:57:19.528+05:30  INFO 49564 --- [log4j] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-10-24T09:57:19.553+05:30  INFO 49564 --- [log4j] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 822 ms
+2026-10-24T09:57:19.849+05:30  INFO 49564 --- [log4j] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-10-24T09:57:19.852+05:30  INFO 49564 --- [log4j] [restartedMain] com.telusko.Log4jApplication             : Started Log4jApplication in 1.564 seconds (process running for 1.945)
+2026-10-24T10:15:00.542+05:30  INFO 49564 --- [log4j] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-24T10:15:00.557+05:30  INFO 49564 --- [log4j] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
