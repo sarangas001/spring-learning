@@ -3,6 +3,7 @@ package com.telusko.controller;
 import com.telusko.dto.OrderRequest;
 import com.telusko.dto.OrderResponse;
 import com.telusko.service.IOrderService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +14,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/orders")
 @CrossOrigin
+@Tag(name= "Order Controller", description = "Order Controller API")
 public class OrderController {
 
     @Autowired
