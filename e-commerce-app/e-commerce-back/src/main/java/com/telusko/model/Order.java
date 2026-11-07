@@ -5,10 +5,10 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
-@Entity
+@Entity(name = "orders")
 public class Order {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column(unique = true)
     private String orderId;
@@ -16,7 +16,7 @@ public class Order {
     private String email;
     private String status;
     private LocalDate orderDate;
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL)
     private List<OrderItem> orderItems;
 
     public Order() {

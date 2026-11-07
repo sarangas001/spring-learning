@@ -69,7 +69,8 @@ public class ProductService implements IProductService{
     }
 
     @Override
-    public List<Product> searchProductsByKeyword(String keyword) {
+    public List<Product> searchProductsByKeyword(String keyword)
+    {
         return repo.searchProductsByKeyword(keyword);
     }
 }

@@ -82,39 +82,13 @@ public class OrderService implements IOrderService{
     }
 
     @Override
+    @Transactional
     public List<OrderResponse> getAllOrderResponse() {
 
         return orderRepo.findAll()
                 .stream()
                 .map(this::mapToOrderResponse)
                 .toList();
-
-//        List<Order> list = orderRepo.findAll();
-//        ArrayList<OrderResponse> orderResponses = new ArrayList<>();
-//        list.forEach(order -> {
-//
-//            List<OrderItemResponse> orderItemResponseList =
-//                    new ArrayList<>();
-//
-//            order.getOrderItems().forEach(item -> {
-//                OrderItemResponse orderItemResponse = new OrderItemResponse(
-//                            item.getProduct().getName(),
-//                            item.getQuantity(),
-//                            item.getTotalPrice()
-//                        );
-//                orderItemResponseList.add(orderItemResponse);
-//            });
-//
-//            OrderResponse orderResponse = new OrderResponse(
-//                    order.getOrderId() , order.getCustomerName(),
-//                    order.getEmail(), order.getStatus(),
-//                    order.getOrderDate(),
-//                    orderItemResponseList
-//            );
-//            orderResponses.add(orderResponse);
-//        });
-//
-//        return orderResponses;
     }
 
     // Map Order Entity to OrderResponse DTO
